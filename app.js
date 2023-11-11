@@ -30,4 +30,14 @@ function mowingLawn(){
     player.money += mowingEquipment.generates
 }
 
-function 
+function update(){
+    if (player.tool + 1 < tools.length){
+        const nextTool = mowingEquipment[player.tool + 1]
+        if (nextTool.price < player.money){
+    } else {
+        alert("Work harder, you don't have enough money for the next upgrade")
+    }
+    } else {
+        alert("There are no more upgrades for your business")
+    }
+}
