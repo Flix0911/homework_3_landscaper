@@ -11,7 +11,7 @@
 //If you have a team of starving students and $1000 dollars, you win
     //Send user a message informing them they've won
 
-const mowingEquipments = [
+const tools = [
     {name: "teeth", generates: 1, price: 0},
     {name: "rusty scissors", generates: 5, price: 5},
     {name: "old-timey push mower", generates: 50, price: 25},
@@ -27,16 +27,16 @@ const player = {
 alert("Lets begin mowing some lawns ~~~ YEAH!!!")
 
 function mowingLawn(){
-    const mowingEquipment = mowingEquipments[player.tool]
-    alert(`you mowed a lawn with ${mowingEquipment.name} and make ${mowingEquipment.generates} dollars`)
-    player.money += mowingEquipment.generates
+    const tool = tools[player.tool]
+    alert(`you mowed a lawn with ${tool.name} and make ${tool.generates} dollars`)
+    player.money += tool.generates
 }
 
 function update(){
     if (player.tool + 1 < tools.length){
-        const nextTool = mowingEquipment[player.tool + 1]
-        if (nextTool.price < player.money){
-            money -= nextTool.price
+        const nextTool = tools[player.tool + 1]
+        if (nextTool.price <= player.money){
+            player.money -= nextTool.price
             player.tool += 1
     } else {
         alert("Work harder, you don't have enough money for the next upgrade")
@@ -60,10 +60,14 @@ while(!player.wonGame){
 
     if (response === 'mow'){
         mowingLawn()
-    } if {
+    } if 
         (response === 'invest' ){
             update()
-        }
+    } if
+        (response !== 'mow' && response !== 'invest') {
+            alert("Come on pal, gotta be productive. Type 'mow' or 'invest'")
     }
+
+    winningObjective()
 
  }
