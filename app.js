@@ -34,6 +34,8 @@ function update(){
     if (player.tool + 1 < tools.length){
         const nextTool = mowingEquipment[player.tool + 1]
         if (nextTool.price < player.money){
+            money -= nextTool.price
+            player.tool += 1
     } else {
         alert("Work harder, you don't have enough money for the next upgrade")
     }
@@ -41,3 +43,14 @@ function update(){
         alert("There are no more upgrades for your business")
     }
 }
+
+function winningObjective(){
+    if(player.tool === tools.length -1 && player.money >= 1000){
+    alert("You're the block lawn mowning emperor")
+    player.wonGame = true
+    } else {
+        alert("You're getting closer but there is still another ruler on the block")
+    }
+}
+
+for 
