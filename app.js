@@ -24,6 +24,8 @@ const player = {
     tool: 0
 }
 
+alert("Lets begin mowing some lawns ~~~ YEAH!!!")
+
 function mowingLawn(){
     const mowingEquipment = mowingEquipments[player.tool]
     alert(`you mowed a lawn with ${mowingEquipment.name} and make ${mowingEquipment.generates} dollars`)
@@ -53,4 +55,15 @@ function winningObjective(){
     }
 }
 
-for 
+while(!player.wonGame){ 
+    const response = prompt(`Another day another dollar! Your wallet has ${player.money} dollars, would you like to [mow] lawns or [invest] today`)
+
+    if (response === 'mow'){
+        mowingLawn()
+    } if {
+        (response === 'invest' ){
+            update()
+        }
+    }
+
+ }
