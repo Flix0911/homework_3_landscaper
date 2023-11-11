@@ -77,9 +77,9 @@ while(!player.wonGame){
         (response !== 'mow' && response !== 'invest') {
             alert("Come on pal, gotta be productive. Type 'mow' or 'invest'")
     }
-    if
-        (reponse === 'give up'){
-            reset
+    //if
+      //  (reponse === 'give up'){
+        //    reset
 //check for winning objective
     winningObjective()
 
