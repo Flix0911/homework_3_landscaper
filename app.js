@@ -65,7 +65,9 @@ function resetGame() {
     player.money = 0; //if reset, go to player.money 0
     player.tool = 0; //if reset, go to player.tool 0
 }
-
+//Disappointed over the above function. I had the skeleton of it and played around, but didn't have player.money or player.tool
+//I had to look that up in Bard for assistence and I was so close but in the end I didn't get it right. How do I get it right next time, I didn't even think of those 2 being needed
+//I tried silly things that were worthless
 
 //while wongame is false(!) create choices of what the player can do next
 while(!player.wonGame){
