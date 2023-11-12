@@ -85,6 +85,7 @@ while(!player.wonGame){
             alert("Come on pal, gotta be productive. Type 'mow' or 'invest'")
     } if 
         (response === 'give up') {
+            alert("You quiter, you'll never rule the block") //it ran but it's so much text response. Need to figure out how those other responses don't run
            resetGame()
     }
 
