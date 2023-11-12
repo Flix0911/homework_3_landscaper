@@ -60,8 +60,14 @@ function winningObjective(){ //name of function is winningObjective
     }
 }
 
+function resetGame() {
+    if(response === 'give up')
+    alert("Lets start that over again")
+}
+
+
 //while wongame is false(!) create choices of what the player can do next
-while(!player.wonGame){ 
+while(!player.wonGame){
     //create a variable called response that will prompt the below message
     const response = prompt(`Another day another dollar! Your wallet has ${player.money} dollars, would you like to [mow] lawns or [invest] today? Or do you want to [give up]?`)
     
@@ -76,11 +82,13 @@ while(!player.wonGame){
     } if
         (response !== 'mow' && response !== 'invest') {
             alert("Come on pal, gotta be productive. Type 'mow' or 'invest'")
-    }
-    //if
-      //  (reponse === 'give up'){
-        //    reset
+    } else {
+        (reponse === 'give up')
+           reset()
+        }
+
 //check for winning objective
     winningObjective()
 
- }
+}
+
