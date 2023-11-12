@@ -60,10 +60,11 @@ function winningObjective(){ //name of function is winningObjective
     }
 }
 
-// function resetGame() 
-     // if(response === 'give up')
-//     alert("Lets start that over again")
-// }
+//function called resetGame to start over
+function resetGame() {
+    player.money = 0; //if reset, go to player.money 0
+    player.tool = 0; //if reset, go to player.tool 0
+}
 
 
 //while wongame is false(!) create choices of what the player can do next
@@ -82,9 +83,9 @@ while(!player.wonGame){
     } if
         (response !== 'mow' && response !== 'invest') {
             alert("Come on pal, gotta be productive. Type 'mow' or 'invest'")
-    // } else {
-    //     (response === 'give up')
-    //        resetGame()
+    } if 
+        (response === 'give up') {
+           resetGame()
     }
 
 //check for winning objective
@@ -92,3 +93,5 @@ while(!player.wonGame){
 
 }
 
+//11/12 11:50 am MST - figured out reset button but I'm always being prompted the const response and the if response alert of "come on pal etc"
+//Going to add an alert to the give up response but it'll be too many responses is my assumption
