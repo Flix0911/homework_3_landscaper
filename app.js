@@ -60,10 +60,10 @@ function winningObjective(){ //name of function is winningObjective
     }
 }
 
-function resetGame() {
-    if(response === 'give up')
-    alert("Lets start that over again")
-}
+// function resetGame() 
+     // if(response === 'give up')
+//     alert("Lets start that over again")
+// }
 
 
 //while wongame is false(!) create choices of what the player can do next
@@ -82,10 +82,10 @@ while(!player.wonGame){
     } if
         (response !== 'mow' && response !== 'invest') {
             alert("Come on pal, gotta be productive. Type 'mow' or 'invest'")
-    } else {
-        (reponse === 'give up')
-           reset()
-        }
+    // } else {
+    //     (response === 'give up')
+    //        resetGame()
+    }
 
 //check for winning objective
     winningObjective()
