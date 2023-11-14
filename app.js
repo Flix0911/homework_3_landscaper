@@ -98,3 +98,4 @@ while(!player.wonGame){
 
 //11/12 11:50 am MST - figured out reset button but I'm always being prompted the const response and the if response alert of "come on pal etc"
 //Going to add an alert to the give up response but it'll be too many responses is my assumption
+//Above was completed
