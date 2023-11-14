@@ -21,8 +21,8 @@ const tools = [
 ]
 //array for the player
 const player = {
-    money: 0,
-    tool: 0
+    money: 0, //where you begin the game at
+    tool: 0 //where you begin the game at
 }
 
 //1st text prompt that begins the game
@@ -66,8 +66,8 @@ function resetGame() {
     player.tool = 0; //if reset, go to player.tool 0
 }
 //Disappointed over the above function. I had the skeleton of it and played around, but didn't have player.money or player.tool
-//I had to look that up in Bard for assistence and I was so close but in the end I didn't get it right. How do I get it right next time, I didn't even think of those 2 being needed
-//I tried silly things that were worthless
+//I had to look that up in Bard for assistence and I was so close but in the end I didn't get it right. How do I get it right next time? I didn't even think of those 2 being needed
+//I tried silly things that were incorrect
 
 //while wongame is false(!) create choices of what the player can do next
 while(!player.wonGame){
@@ -83,7 +83,7 @@ while(!player.wonGame){
             update()
     //if an answer is typed outside of that, so does not equal mow and invest, alert again on what player must choose
     } if
-        (response !== 'mow' && response !== 'invest') {
+        (response !== 'mow' && response !== 'invest' && response !== 'give up') { //added another && for give up
             alert("Come on pal, gotta be productive. Type 'mow' or 'invest'")
     } if 
         (response === 'give up') {
